@@ -13,15 +13,11 @@ pipeline {
         }
         stage('Build') {
             steps {
-                withMaven(
-                    maven: 'maven-3',
-                ) {
                     sh "mvn clean:clean -X"
     
                     sh "mvn dependency:copy-dependencies"
     
                     sh "mvn compiler:compile"
-                }
             }
         }
 
