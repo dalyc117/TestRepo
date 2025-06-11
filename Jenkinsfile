@@ -43,7 +43,7 @@ pipeline {
         stage('Deploy'){
             steps {
                 echo "Initiating Deployment"
-                sh 'docker build -f Dockerfile -t vfc . ''
+                sh 'docker build -f Dockerfile -t vfc . '
             }
         }
     }
