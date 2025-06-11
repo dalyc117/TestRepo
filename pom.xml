@@ -101,7 +101,6 @@
 					</execution>
 				</executions>
 				<configuration>
-					<propertiesEncoding>UTF-8</propertiesEncoding>
 					<mainClass>org.example.Main</mainClass>
 				</configuration>
 			</plugin>
