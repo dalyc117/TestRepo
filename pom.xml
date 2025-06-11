@@ -81,7 +81,6 @@
 		<dependency>
 			<groupId>org.codehaus.mojo</groupId>
 			<artifactId>exec-maven-plugin</artifactId>
-			<version>3.9.10</version>
 		</dependency>
 	</dependencies>
 
@@ -94,7 +93,6 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
-				<version>3.9.10</version>
 				<executions>
 					<execution>
 						<goals>
@@ -103,6 +101,7 @@
 					</execution>
 				</executions>
 				<configuration>
+					<propertiesEncoding>UTF-8</propertiesEncoding>
 					<mainClass>org.example.Main</mainClass>
 				</configuration>
 			</plugin>
