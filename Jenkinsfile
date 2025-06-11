@@ -25,13 +25,17 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh "mvn surefire:test"
+                withMaven(maven: 'maven') {
+                    sh "mvn surefire:test"
+                }
             }
         }
 
         stage('Package'){
             steps {
-                sh 'mvn package'
+                withMaven(maven: 'maven') {
+                    sh 'mvn package'
+                }
             }
         }
 
