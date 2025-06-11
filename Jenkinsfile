@@ -1,8 +1,6 @@
 pipeline {
     agent any
 
-    maven 3.2.5
-
     tools {
         git 'Default'
     }
