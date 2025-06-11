@@ -31,9 +31,6 @@
 		<java.version>17</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	<prerequisites>
-		<maven>3.2.5</maven>
-   	</prerequisites>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
