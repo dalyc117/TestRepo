@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    options {
+        durabilityHint 'MAX_SURVIVABILITY'
+    }
 
     tools {
         git 'Default'
