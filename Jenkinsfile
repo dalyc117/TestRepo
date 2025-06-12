@@ -50,6 +50,8 @@ pipeline {
             steps {
                 echo "Initiating Deployment"
                 sh 'docker build -f Dockerfile -t vfc . '
+                sh 'docker rm -f "vfcwebcontainer" || true'
+                sh 'docker run --name "vfcwebcontainer" -p 9090:8080 --detach myapp:latest'
             }
         }
     }
